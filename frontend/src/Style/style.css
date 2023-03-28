@@ -1,0 +1,30 @@
+#container_bar{
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    background-color: #434D57;
+}
+
+#container_form{
+    margin-top: 80px;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(0, 0, 0);
+}
+
+#separed_row{   
+    padding: 20px;
+}
+
+#profile_card{
+    background-color: #434D57;
+    padding: 25px;
+    color: white;
+}
+
+#col_mainproducts{
+    padding: 20px;
+}
+
+#collapse{
+    background-color: white;
+}
