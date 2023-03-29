@@ -33,7 +33,7 @@ if everything is good, on your browser type down: http://localhost:3000/ then yo
 
 <b>#5)<br/> To start the connection with the data (backend), open a new terminal without closing the first one, then access again the local path you stored before of the repository <br /><br />
 ![image](https://user-images.githubusercontent.com/69688188/228676377-924fee6e-d207-4e65-bdaf-63ea9db508e8.png) <br /><br />
-then acces to the backend folder <br /><br />
+then access to the backend folder <br /><br />
 ![image](https://user-images.githubusercontent.com/69688188/228676460-8376e683-c68c-4e70-8a08-d5bf58663337.png) <br /><br />
 in this path you must run the following commands <br /><br />
 docker build -t back . <br /><br />
