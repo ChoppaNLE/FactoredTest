@@ -27,7 +27,7 @@ router.use(async (req, res, next) => {
     next();
 })
 
-router.use(async (req, res, next) =>{
+router.use(async (req, res, next) => {
 
     rows[0].map(async (element) => {
         rows2 = await conn.query("SELECT * FROM POSITIONC WHERE id_positionc = " + element.id_positionc)
@@ -52,16 +52,16 @@ router.use(async (req, res, next) =>{
         habilitiesElement = {}
         rows3[0].map(async (element3) => {
 
-            if (element3.id_profile == element.id_profile){
+            if (element3.id_profile == element.id_profile) {
                 habilitiesElement[element3.language] = element3.value
             }
-            
+
         })
 
         data[count].personxskill = habilitiesElement
-        
+
         count += 1
-        if (count == rows[0].length){
+        if (count == rows[0].length) {
             next()
         }
     })

@@ -28,12 +28,12 @@ ChartJS.register(
     Filler,
 )
 
-function ProfileCard({ id, name, position, personxskill, avatar}) {
+function ProfileCard({ id, name, position, personxskill, avatar }) {
 
     var labelss = []
     var datass = []
 
-    for (var i in personxskill){
+    for (var i in personxskill) {
         labelss.push(i)
         datass.push(personxskill[i])
     }
@@ -45,7 +45,7 @@ function ProfileCard({ id, name, position, personxskill, avatar}) {
             data: datass,
             backgroundColor: '#434D57',
             borderColor: '#434D57',
-        }], 
+        }],
     }
 
     var options = {}
@@ -83,6 +83,7 @@ function ProfileCard({ id, name, position, personxskill, avatar}) {
                 </Typography>
             </CardContent>
             <CardActions id='collapse'>
+                <div>Show Skills</div>
                 <ExpandMore
                     expand={expanded}
                     onClick={handleExpandClick}

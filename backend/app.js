@@ -1,6 +1,6 @@
 var Bighead = require("@bigheads/core");
 const generateDiceBearBottts = (seed) =>
-  `https://avatars.dicebear.com/api/bottts/${seed}.svg`;
+	`https://avatars.dicebear.com/api/bottts/${seed}.svg`;
 
 var createError = require('http-errors');
 var express = require('express');
@@ -45,7 +45,6 @@ app.use(function (err, req, res, next) {
 	res.status(err.status || 500);
 	res.render('error');
 });
-
 
 module.exports = app;
 

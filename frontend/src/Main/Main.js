@@ -1,33 +1,34 @@
 import Profiles from './Profiles'
 import Bar from '../Common/Bar'
 import CardCreator from './CardCreator'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
-function Main(){
+function Main() {
 
-    var [data, setData] = useState([{}])
+    function GetBackData() {
+        var [data, setData] = useState([{}])
 
-    function getProducts(route){
-        const requestOptions = {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
-        };
-        fetch(route, requestOptions)
-            .then(res => res.json())
-            .then(res => setData(res));
+        function getProducts(route) {
+            const requestOptions = {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' },
+            };
+            fetch(route, requestOptions)
+                .then(res => res.json())
+                .then(res => setData(res));
+        }
+
+        useEffect(() => {
+            getProducts("http://localhost:9000/getData")
+        }, [])
+        return (data)
     }
 
-    useEffect(() => {
-        getProducts("http://localhost:9000/getData")
-    }, [])
-
-    console.log(data)
-
-    return(
+    return (
         <>
-            <Bar/>
-            <Profiles/>
-            <CardCreator data={data}/>
+            <Bar />
+            <Profiles />
+            <CardCreator data={GetBackData()} />
         </>
     )
 }

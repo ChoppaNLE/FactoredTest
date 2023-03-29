@@ -4,8 +4,8 @@ import Form from './Form'
 function Login() {
     return (
         <>
-            <Bar/>
-            <Form/>
+            <Bar />
+            <Form />
         </>
     );
 }

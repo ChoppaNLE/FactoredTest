@@ -26,5 +26,9 @@
 }
 
 #collapse{
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #434D57;
     background-color: white;
 }

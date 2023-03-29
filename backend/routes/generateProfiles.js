@@ -1,3 +1,5 @@
+// THIS IS AN INSERT THAT CANNOT BE DONE IN SQL, BECAUSE OF THE RANDOM AVATAR
+
 const avatar = "" + generateDiceBearBottts(Math.random())
 console.log(avatar)
 
@@ -11,10 +13,10 @@ conn = createPool({
     }
 });
 
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Pedro Perez'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '1');")
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Luisa Rodriguez'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '2');")
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Juan Gonzales'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '2');")
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Ana Bray'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '3');")
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Laura Gomez'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '2');")
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Lucas Paqueta'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '3');")
-conn.query(		"INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Juan Rueda'," + "'"+generateDiceBearBottts(Math.random())+"'" + ", '2');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Pedro Perez'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '1');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Luisa Rodriguez'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '2');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Juan Gonzales'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '2');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Ana Bray'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '3');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Laura Gomez'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '2');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Lucas Paqueta'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '3');")
+conn.query("INSERT INTO PROFILE (name, avatar, id_positionc) VALUES ('Juan Rueda'," + "'" + generateDiceBearBottts(Math.random()) + "'" + ", '2');")
