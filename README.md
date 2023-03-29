@@ -43,4 +43,4 @@ docker run -it -p 9000:9000 back <br /><br />
 if everything is good, on your browser type down: http://localhost:3000/Profiles then you should see the following interface <br /><br />
 ![image](https://user-images.githubusercontent.com/69688188/228676913-be68452d-57ca-4b36-9c18-400a45c74676.png) <br /><br />
 
-<b>#6)<br/> We just finished, to keep the project opened, dont close the cmd (windows) terminals (both of them) <br /><br />
+<b>#6)<br/> We just finished, to keep the project open, dont close the cmd (windows) terminals (both of them) <br /><br />
