@@ -1,4 +1,3 @@
-var Bighead = require("@bigheads/core");
 const generateDiceBearBottts = (seed) =>
 	`https://avatars.dicebear.com/api/bottts/${seed}.svg`;
 
