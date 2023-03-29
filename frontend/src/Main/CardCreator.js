@@ -1,11 +1,13 @@
 import ProfileCard from './ProfileCard'
 import data from '../Data/data'
 
-function CardCreator() {
+function CardCreator( {data} ) {
 
     let product_count = Object.keys(data).length;
     let loop_count = 0
     let json_count = product_count
+
+    console.log(data)
 
     return (
         <>

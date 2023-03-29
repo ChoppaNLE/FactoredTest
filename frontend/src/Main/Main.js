@@ -1,13 +1,33 @@
 import Profiles from './Profiles'
 import Bar from '../Common/Bar'
 import CardCreator from './CardCreator'
+import {useState, useEffect} from 'react'
 
 function Main(){
+
+    var [data, setData] = useState([{}])
+
+    function getProducts(route){
+        const requestOptions = {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+        };
+        fetch(route, requestOptions)
+            .then(res => res.json())
+            .then(res => setData(res));
+    }
+
+    useEffect(() => {
+        getProducts("http://localhost:9000/getData")
+    }, [])
+
+    console.log(data)
+
     return(
         <>
             <Bar/>
             <Profiles/>
-            <CardCreator/>
+            <CardCreator data={data}/>
         </>
     )
 }
