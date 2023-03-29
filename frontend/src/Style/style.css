@@ -32,3 +32,20 @@
     color: #434D57;
     background-color: white;
 }
+
+#errorMessage1{
+    margin-top: 60px;
+    font-size: 30px;
+    color: red;
+    
+}
+
+#errorMessage2{
+    font-size: 30px;
+    color: #434D57;
+}
+
+
+#link{
+    color: #434D57;
+}

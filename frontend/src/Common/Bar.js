@@ -1,3 +1,6 @@
+import { color } from '@mui/system'
+import {Link} from 'react-router-dom'
+
 function Bar() {
     return (
         <div className='container-fluid' id="container_bar">
@@ -9,7 +12,9 @@ function Bar() {
                 </div>
                 <div className='col-1 use my-auto'>
                     <div class="elementor-item elementor-item-active ">
-                        HOME
+                        <Link to='/' id='link' style={{textDecoration: 'none'}}>
+                            HOME
+                        </Link>
                     </div>
                 </div>
             </div>
